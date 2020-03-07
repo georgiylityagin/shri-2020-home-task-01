@@ -32,25 +32,31 @@
               class="form-group__label text text_size_s text_color_default text_line-height_s">
               GitHub repository <span class="text text_color_red">*</span>
             </label>
-            <!-- <div class="form-group__input-wrapper"> -->
-            <input type="search" id="githubRepository" placeholder="user-name/repo-name"
-              class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
-            <!-- <img src="../assets/clear-icon.svg" class="form-group__clear-icon"> -->
-            <!-- </div> -->
+            <div class="form-group__input-wrapper">
+              <input type="text" id="githubRepository" placeholder="user-name/repo-name"
+                class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
+              <div class="form-group__clear-icon icon"></div>
+            </div>
           </div>
           <div class="form-group">
             <label for="command" class="form-group__label text text_size_s text_color_default text_line-height_s">
               Build command
             </label>
-            <input type="search" id="command" placeholder="type build command here"
-              class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
+            <div class="form-group__input-wrapper">
+              <input type="text" id="command" placeholder="type build command here"
+                class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
+              <div class="form-group__clear-icon icon"></div>
+            </div>
           </div>
           <div class="form-group">
             <label for="branch" class="form-group__label text text_size_s text_color_default text_line-height_s">
               Main branch
             </label>
-            <input type="search" id="branch" placeholder="branch-name"
-              class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
+            <div class="form-group__input-wrapper">
+              <input type="text" id="branch" placeholder="branch-name"
+                class="form-group__input form-group__input_full-width text text_size_s text_color_default text_line-height_xxs">
+              <div class="form-group__clear-icon icon"></div>
+            </div>
           </div>
           <div class="form-group form-group_inline">
             <label for="synchronizationTime"
