@@ -36,6 +36,8 @@
   &__details {
     display: flex;
     flex-direction: column;
+
+    // min-width: 0;
   }
 
   &__main-info {
@@ -49,6 +51,10 @@
 
   &__message {
     margin-bottom: 8px;
+
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
   }
 
   &__meta-info {
@@ -145,6 +151,10 @@
     &__main-info {
       flex-direction: column;
     }
+
+    // &__message {
+    //   white-space: normal;
+    // }
 
     &__meta-info {
       flex-wrap: wrap;

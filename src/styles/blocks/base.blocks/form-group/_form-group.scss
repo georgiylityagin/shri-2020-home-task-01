@@ -10,7 +10,6 @@
   &__input-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
     max-width: 474px;
   }
 
@@ -27,7 +26,6 @@
     }
 
     &_full-width {
-      max-width: 474px;
       width: 100%;
     }
 
@@ -37,19 +35,23 @@
       text-align: right;
     }
 
-    // &:not(:placeholder-shown) + img {
-    //   visibility: visible;
-    // }
+    & + .form-group__clear-icon {
+      display: none;
+    }
+
+    &:not(:placeholder-shown) + .form-group__clear-icon {
+      display: block;
+    }
   }
 
-  // &__clear-icon {
-  //   position: absolute;
-  //   width: 16px;
-  //   height: 16px;
-  //   top: calc(50% - 16px/2);
-  //   left: calc(100% - 3*16px/2);
-  //   visibility: hidden;
-  // }
+  &__clear-icon {
+    position: absolute;
+    top: calc(50% - 16px/2);
+    left: calc(100% - 2*16px);
+    width: 16px;
+    height: 16px;
+    background-image: $clear-icon;
+  }
 
   &_inline {
     display: flex;

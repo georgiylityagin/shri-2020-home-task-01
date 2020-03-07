@@ -34,6 +34,11 @@
   // min-height: calc(100vh - 48px - 32px);
   flex: 1;
   padding: 0 $content-mobile-indent;
+
+  &_vertical-align_center {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page {

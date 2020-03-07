@@ -2,7 +2,7 @@
   padding: 8px 12px;
   margin-top: 12px;
   margin-bottom: 20px;
-  min-width: $content-max-width;
+  overflow-x: auto;
   background-color: $grey-10;
   font-family: Hack, monospace;
   font-size: map-get($font-sizes, xs);
