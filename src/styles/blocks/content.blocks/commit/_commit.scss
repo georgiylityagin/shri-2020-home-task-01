@@ -5,6 +5,15 @@
   box-shadow: 0px 1px 1px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
   border-radius: 6px;
 
+  &__wrapper {
+    display: flex;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
+  }
+
   &__status {
     width: 21px;
     height: 21px;
@@ -140,8 +149,16 @@
 
 @media only screen and (max-width: 500px) {
   .commit {
+    padding: 12px 16px;
+
     &:nth-child(n+6) {
       display: none;
+    }
+
+    &__status {
+      width: 15px;
+      height: 15px;
+      min-width: 15px;
     }
 
     &__content {
@@ -152,16 +169,23 @@
       flex-direction: column;
     }
 
+    &__id {
+      font-size: 16px;
+      line-height: map-get($line-heights, xs);
+    }
+
     // &__message {
     //   white-space: normal;
     // }
 
     &__meta-info {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      flex-direction: column;
     }
 
     &__author {
-      width: 400px;
+      // width: 380px;
+      // overflow: hidden;
       margin-top: 8px;
     }
 

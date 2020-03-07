@@ -38,19 +38,15 @@ $color-bg-action-hovered: $orange-200;
 $color-bg-action-outline: $orange-300;
 $color-bg-disabled: $grey-10;
 
-$primary-color: #fff;
-$secondary-color: #f0f2f3;
-$accent-color: #ffcc00;
+// Background colors
+$bg-footer: $grey-50;
+
+// Border colors
+$border-color: $grey-400;
+$border-color-focus: $grey-300;
 
 
-
-$border-radius: 4px;
-$color-bg-control: #e6e6e6;
-
-$border-color: #D9D9D9;
-$border-color-focus: #B3B3B3;
-
-
+// Text parameters
 $font-sizes: (
   "xs": 10px,
   "s": 13px,
@@ -76,9 +72,10 @@ $line-heights: (
   "xxxl": 36px
 );
 
+// Other variables
 $content-max-width: 826px;
 $content-mobile-indent: 16px;
-
+$border-radius: 4px;
 $breakpoint: 500px;
 
 

@@ -2,19 +2,19 @@
   font-family: YS Text, sans-serif;
 
   &_size_xs {
-    font-size: map-get($font-sizes, xs) !important;
+    font-size: map-get($font-sizes, xs);
   }
   &_size_s {
-    font-size: map-get($font-sizes, s) !important;
+    font-size: map-get($font-sizes, s);
   }
   &_size_m {
-    font-size: map-get($font-sizes, m) !important;
+    font-size: map-get($font-sizes, m);
   }
   &_size_l {
-    font-size: map-get($font-sizes, l) !important;
+    font-size: map-get($font-sizes, l);
   }
   &_size_xl {
-    font-size: map-get($font-sizes, xl) !important;
+    font-size: map-get($font-sizes, xl);
   }
 
   &_weight_normal {
@@ -28,28 +28,28 @@
   }
 
   &_line-height_xxs {
-    line-height: map-get($line-heights, xxs) !important;
+    line-height: map-get($line-heights, xxs);
   }
   &_line-height_xs {
-    line-height: map-get($line-heights, xs) !important;
+    line-height: map-get($line-heights, xs);
   }
   &_line-height_s {
-    line-height: map-get($line-heights, s) !important;
+    line-height: map-get($line-heights, s);
   }
   &_line-height_m {
-    line-height: map-get($line-heights, m) !important;
+    line-height: map-get($line-heights, m);
   }
   &_line-height_l {
-    line-height: map-get($line-heights, l) !important;
+    line-height: map-get($line-heights, l);
   }
   &_line-height_xl {
-    line-height: map-get($line-heights, xl) !important;
+    line-height: map-get($line-heights, xl);
   }
   &_line-height_xxl {
-    line-height: map-get($line-heights, xxl) !important;
+    line-height: map-get($line-heights, xxl);
   }
   &_line-height_xxxl {
-    line-height: map-get($line-heights, xxxl) !important;
+    line-height: map-get($line-heights, xxxl);
   }
 
   &_letter-spacing_narrow {
