@@ -1,0 +1,53 @@
+.button {
+  border-radius: $border-radius;
+  padding: 0 18px;
+  display: inline-block;
+  color: $text-color-default;
+  font-family: YS Text, sans-serif;
+  font-size: map-get($font-sizes, s);
+  line-height: 32px;
+
+  &:disabled {
+    background-color: $color-bg-disabled;
+  }
+
+  &_control {
+    background-color: $color-bg-control;
+    border: 2px solid $color-bg-control;
+    &:hover {
+      background-color: $color-bg-control-hovered;
+      border-color: $color-bg-control-hovered;
+    }
+    &:focus {
+      outline: none;
+      border-color: $color-bg-control-outline;
+      border-radius: $border-radius;
+    }
+  }
+
+  &_action {
+    background-color: $color-bg-action;
+    border: 2px solid $color-bg-action;
+    &:focus {
+      outline: none;
+      border-color: $color-bg-action-outline;
+      border-radius: $border-radius;
+    }
+    &:hover {
+      background-color: $color-bg-action-hovered;
+      border-color: $color-bg-action-hovered;
+    }
+  }
+
+  &_small {
+    padding: 0 11px;
+    line-height: 24px;
+  }
+}
+
+
+@media only screen and (max-width: $breakpoint) {
+  .button {
+    width: 100%;
+  }
+}

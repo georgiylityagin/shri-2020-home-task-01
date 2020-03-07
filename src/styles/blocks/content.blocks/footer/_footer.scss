@@ -1,0 +1,48 @@
+@import '../../../variables';
+
+.footer {
+  width: 100%;
+  padding: 0 $content-mobile-indent;
+  background-color: $secondary-color;
+
+  &__content {
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    margin-right: 12px;
+    font-size: map-get($font-sizes, s);
+    line-height: map-get($line-heights, xs);
+    color: $text-color-muted;
+    letter-spacing: 0.06px;
+
+    &:hover {
+      color: $text-color-danger;
+    }
+  }
+
+  &__text {
+    font-size: map-get($font-sizes, s);
+    line-height: map-get($line-heights, s);
+    color: $text-color-muted;
+    letter-spacing: 0.06px;
+  }
+}
+
+
+@media only screen and (max-width: $breakpoint) {
+  .footer {
+    &__content {
+      padding: 12px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__text {
+      margin-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.button-group {
+  margin-top: 12px;
+  display: flex;
+
+  &_arrangement_horizontal {
+    flex-direction: row;
+
+    .button:first-child {
+      margin-right: 8px;
+    }
+  }
+
+  &_arrangement_vertical {
+    flex-direction: column;
+
+    .button:first-child {
+      margin-bottom: 8px;
+    }
+  }
+}

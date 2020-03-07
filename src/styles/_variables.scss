@@ -1,0 +1,84 @@
+// Colors
+$black-100: #000000;
+
+$red-500: #FF3333;
+
+$green-500: #00B341;
+
+$orange-100: #FFCC00; //  action button
+$orange-200: #F2C200; // hovered action button
+$orange-300: #B38F00; // action button outline
+$orange-500: #FF9A00; // warning id
+
+$grey-10: #F2F2F2; // Disabled button & log background
+$grey-50: #F0F2F3; // Footer background
+$grey-100: #E6E6E6; // Standart button & header button
+$grey-200: #DBDBDB; // Hovered standart button
+$grey-300: #B3B3B3; // Focused button outline & focused input outline
+$grey-400: #D9D9D9; // Input border
+$grey-500: #CCCCCC; // Placeholder text
+$grey-1000: #7f8285; // Muted text
+$grey-1100: #595959; // Text commit secondary & date-time
+
+
+// Text colors
+$text-color-default: $black-100;
+$text-color-secondary: $grey-1100;
+$text-color-muted: $grey-1000;
+$text-color-success: $green-500;
+$text-color-warning: $orange-500;
+$text-color-danger: $red-500;
+
+// Button colors
+$color-bg-control: $grey-100;
+$color-bg-control-hovered: $grey-200;
+$color-bg-control-outline: $grey-300;
+$color-bg-action: $orange-100;
+$color-bg-action-hovered: $orange-200;
+$color-bg-action-outline: $orange-300;
+$color-bg-disabled: $grey-10;
+
+$primary-color: #fff;
+$secondary-color: #f0f2f3;
+$accent-color: #ffcc00;
+
+
+
+$border-radius: 4px;
+$color-bg-control: #e6e6e6;
+
+$border-color: #D9D9D9;
+$border-color-focus: #B3B3B3;
+
+
+$font-sizes: (
+  "xs": 10px,
+  "s": 13px,
+  "m": 15px,
+  "l": 18px,
+  "xl": 24px
+);
+
+$font-weights: (
+  "normal": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+$line-heights: (
+  "xxs": 15px,
+  "xs": 16px,
+  "s": 18px,
+  "m": 20px,
+  "l": 22px,
+  "xl": 28px,
+  "xxl": 30px,
+  "xxxl": 36px
+);
+
+$content-max-width: 826px;
+$content-mobile-indent: 16px;
+
+$breakpoint: 500px;
+
+

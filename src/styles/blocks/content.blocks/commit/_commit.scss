@@ -1,0 +1,155 @@
+.commit {
+  display: flex;
+  margin-top: 8px;
+  padding: 12px 24px;
+  box-shadow: 0px 1px 1px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
+  border-radius: 6px;
+
+  &__status {
+    width: 21px;
+    height: 21px;
+    min-width: 21px;
+
+    &_done {
+      background-image: $done-icon;
+    }
+    &_fail {
+      background-image: $fail-icon;
+    }
+    &_in-progress {
+      background-image: $clock-icon;
+    }
+  }
+
+  &__content {
+    padding-left: 9px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main-info {
+    display: flex;
+  }
+
+  &__id {
+    margin-right: 4px;
+    margin-bottom: 8px;
+  }
+
+  &__message {
+    margin-bottom: 8px;
+  }
+
+  &__meta-info {
+    display: flex;
+  }
+
+  &__branch {
+    display: flex;
+    align-items: center;
+    &-logo {
+      width: 16px;
+      height: 8px;
+      background-image: $commit-icon;
+      margin-right: 4px;
+    }
+  }
+
+  &__branch-name {
+    margin-right: 4px;
+  }
+
+  &__hash {
+    margin-right: 10px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    .text {
+      white-space: nowrap;
+    }
+    &-icon {
+      width: 12.25px;
+      height: 14px;
+      background-image: $user-icon;
+      margin-right: 5.75px;
+    }
+  }
+
+  &__time-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__time {
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 12px;
+  }
+
+  &__calendar-logo {
+    width: 13.95px;
+    height: 16px;
+    background-image: $calendar-icon;
+    margin-right: 5.05px;
+  }
+
+  &__duration {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  &__stopwatch-logo {
+    width: 12.97px;
+    height: 16px;
+    background-image: $stopwatch-icon;
+    margin-right: 5.53px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .commit {
+    &:nth-child(n+6) {
+      display: none;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__main-info {
+      flex-direction: column;
+    }
+
+    &__meta-info {
+      flex-wrap: wrap;
+    }
+
+    &__author {
+      width: 400px;
+      margin-top: 8px;
+    }
+
+    &__time-info {
+      margin-top: 8px;
+      padding-top: 10px;
+      flex-direction: row;
+      // justify-content: flex-start;
+      border-top: 1px solid $grey-50;
+    }
+
+    &__time {
+      margin-right: 9px;
+      margin-bottom: 0;
+    }
+  }
+}

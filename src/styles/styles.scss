@@ -1,0 +1,85 @@
+@import './resets';
+@import './variables';
+@import './icons';
+@import './font';
+
+@import './blocks/base.blocks/button/button';
+@import './blocks/base.blocks/button-group/button-group';
+@import './blocks/base.blocks/text/text';
+@import './blocks/base.blocks/input-form/input-form';
+@import './blocks/base.blocks/form-group/form-group';
+@import './blocks/base.blocks/icon/icon';
+@import './blocks/base.blocks/margin/margin';
+
+@import './blocks/content.blocks/header/header';
+@import './blocks/content.blocks/config-info/config-info';
+@import './blocks/content.blocks/footer/footer';
+@import './blocks/content.blocks/commit-history/commit-history';
+@import './blocks/content.blocks/commit/commit';
+
+
+
+.container {
+  max-width: $content-max-width;
+  margin: auto;
+
+  &_distribute_between {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-content {
+  // min-height: calc(100vh - 48px - 32px);
+  flex: 1;
+  padding: 0 $content-mobile-indent;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .page-content {
+    min-height: calc(100vh - 52px - 68px);
+  }
+
+  .button-group {
+    flex-direction: column;
+    // margin-bottom: 20px;
+
+    .button {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 12px;
+      }
+
+      .text {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .input-form__description {
+    width: 210px;
+  }
+
+  .input-form {
+    margin-top: 14px;
+  
+  
+    &__description {
+      margin-bottom: 3px;
+    }
+  }
+
+  .form-group_inline {
+    padding: 10px 0 8px;
+  }
+}
+
+

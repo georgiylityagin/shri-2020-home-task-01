@@ -1,0 +1,84 @@
+.text {
+  font-family: YS Text, sans-serif;
+
+  &_size_xs {
+    font-size: map-get($font-sizes, xs) !important;
+  }
+  &_size_s {
+    font-size: map-get($font-sizes, s) !important;
+  }
+  &_size_m {
+    font-size: map-get($font-sizes, m) !important;
+  }
+  &_size_l {
+    font-size: map-get($font-sizes, l) !important;
+  }
+  &_size_xl {
+    font-size: map-get($font-sizes, xl) !important;
+  }
+
+  &_weight_normal {
+    font-weight: map-get($font-weights, normal);
+  }
+  &_weight_medium {
+    font-weight: map-get($font-weights, medium);
+  }
+  &_weight_bold {
+    font-weight: map-get($font-weights, bold);
+  }
+
+  &_line-height_xxs {
+    line-height: map-get($line-heights, xxs) !important;
+  }
+  &_line-height_xs {
+    line-height: map-get($line-heights, xs) !important;
+  }
+  &_line-height_s {
+    line-height: map-get($line-heights, s) !important;
+  }
+  &_line-height_m {
+    line-height: map-get($line-heights, m) !important;
+  }
+  &_line-height_l {
+    line-height: map-get($line-heights, l) !important;
+  }
+  &_line-height_xl {
+    line-height: map-get($line-heights, xl) !important;
+  }
+  &_line-height_xxl {
+    line-height: map-get($line-heights, xxl) !important;
+  }
+  &_line-height_xxxl {
+    line-height: map-get($line-heights, xxxl) !important;
+  }
+
+  &_letter-spacing_narrow {
+    letter-spacing: 0.06px;
+  }
+
+  &_color_default {
+    color: $text-color-default;
+  }
+  &_color_secondary {
+    color: $text-color-secondary;
+  }
+  &_color_muted {
+    color: $text-color-muted;
+  }
+  &_color_red {
+    color: $red-500;
+  }
+  &_color_success {
+    color: $text-color-success;
+  }
+  &_color_warning {
+    color: $text-color-warning;
+  }
+  &_color_danger {
+    color: $text-color-danger;
+  }
+
+  &_align_center {
+    text-align: center;
+  }
+}
