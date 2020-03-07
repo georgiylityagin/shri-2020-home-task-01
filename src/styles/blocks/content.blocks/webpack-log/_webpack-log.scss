@@ -1,0 +1,16 @@
+.webpack-log {
+  padding: 8px 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  min-width: $content-max-width;
+  background-color: $grey-10;
+  font-family: Hack, monospace;
+  font-size: map-get($font-sizes, xs);
+  line-height: map-get($line-heights, m);
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .webpack-log {
+    margin-left: -$content-mobile-indent;
+  }
+}

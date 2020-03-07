@@ -27,6 +27,10 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
+
+    &_time-at-bottom {
+      flex-direction: column;
+    }
   }
 
   &__details {
@@ -87,6 +91,18 @@
   &__time-info {
     display: flex;
     flex-direction: column;
+
+    &_inline {
+      flex-direction: row;
+      margin-top: 8px;
+      padding-top: 10px;
+      border-top: 1px solid $grey-50;
+
+      .commit__time {
+        margin-right: 9px;
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__time {
@@ -143,7 +159,6 @@
       margin-top: 8px;
       padding-top: 10px;
       flex-direction: row;
-      // justify-content: flex-start;
       border-top: 1px solid $grey-50;
     }
 

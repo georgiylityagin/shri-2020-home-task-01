@@ -4,6 +4,7 @@
   width: 100%;
   padding: 0 $content-mobile-indent;
   background-color: $secondary-color;
+  flex-shrink: 0;
 
   &__content {
     padding: 7px 0;
