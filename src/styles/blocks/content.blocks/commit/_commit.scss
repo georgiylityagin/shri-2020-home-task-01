@@ -45,8 +45,7 @@
   &__details {
     display: flex;
     flex-direction: column;
-
-    // min-width: 0;
+    min-width: 0;
   }
 
   &__main-info {
@@ -184,8 +183,6 @@
     }
 
     &__author {
-      // width: 380px;
-      // overflow: hidden;
       margin-top: 8px;
     }
 
