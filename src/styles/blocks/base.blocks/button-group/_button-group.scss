@@ -1,5 +1,6 @@
 .button-group {
   margin-top: 12px;
+  margin-bottom: 20px;
   display: flex;
 
   &_arrangement_horizontal {
@@ -16,5 +17,11 @@
     .button:first-child {
       margin-bottom: 8px;
     }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .button-group {
+    flex-direction: column;
   }
 }

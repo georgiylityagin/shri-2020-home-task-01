@@ -31,7 +31,6 @@
 }
 
 .page-content {
-  // min-height: calc(100vh - 48px - 32px);
   flex: 1;
   padding: 0 $content-mobile-indent;
 
@@ -47,45 +46,5 @@
   flex-direction: column;
 }
 
-@media only screen and (max-width: $breakpoint) {
-  .page-content {
-    min-height: calc(100vh - 52px - 68px);
-  }
-
-  .button-group {
-    flex-direction: column;
-    // margin-bottom: 20px;
-
-    .button {
-      width: 100%;
-
-      &:first-child {
-        margin-bottom: 12px;
-      }
-
-      .text {
-        display: inline-block;
-        width: 100%;
-      }
-    }
-  }
-
-  .input-form__description {
-    width: 210px;
-  }
-
-  .input-form {
-    margin-top: 14px;
-  
-  
-    &__description {
-      margin-bottom: 3px;
-    }
-  }
-
-  .form-group_inline {
-    padding: 10px 0 8px;
-  }
-}
 
 

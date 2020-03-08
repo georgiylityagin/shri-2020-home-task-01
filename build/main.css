@@ -69,8 +69,15 @@ body {
     padding: 0 11px;
     line-height: 24px; }
 
+@media only screen and (max-width: 500px) {
+  .button {
+    width: 100%; }
+    .button:first-child {
+      margin-bottom: 12px; } }
+
 .button-group {
   margin-top: 12px;
+  margin-bottom: 20px;
   display: flex; }
   .button-group_arrangement_horizontal {
     flex-direction: row; }
@@ -80,6 +87,10 @@ body {
     flex-direction: column; }
     .button-group_arrangement_vertical .button:first-child {
       margin-bottom: 8px; }
+
+@media only screen and (max-width: 500px) {
+  .button-group {
+    flex-direction: column; } }
 
 .text {
   font-family: YS Text, sans-serif; }
@@ -141,6 +152,14 @@ body {
   .input-form__description {
     margin-bottom: 12px; }
 
+@media only screen and (max-width: 500px) {
+  .input-form__description {
+    width: 210px; }
+  .input-form {
+    margin-top: 14px; }
+    .input-form__description {
+      margin-bottom: 3px; } }
+
 .form-group {
   padding: 10px 0 6px; }
   .form-group__label {
@@ -183,6 +202,10 @@ body {
     padding: 12px 0; }
     .form-group_inline .form-group__label {
       margin-bottom: 0; }
+
+@media only screen and (max-width: 500px) {
+  .form-group_inline {
+    padding: 10px 0 8px; } }
 
 .icon {
   background-repeat: no-repeat;
@@ -273,6 +296,10 @@ body {
       margin-top: 24px; }
   .config-info__button {
     padding: 9px 20px; }
+
+@media only screen and (max-width: 500px) {
+  .config-info .button {
+    width: auto; } }
 
 .footer {
   width: 100%;
@@ -465,25 +492,4 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column; }
-
-@media only screen and (max-width: 500px) {
-  .page-content {
-    min-height: calc(100vh - 52px - 68px); }
-  .button-group {
-    flex-direction: column; }
-    .button-group .button {
-      width: 100%; }
-      .button-group .button:first-child {
-        margin-bottom: 12px; }
-      .button-group .button .text {
-        display: inline-block;
-        width: 100%; }
-  .input-form__description {
-    width: 210px; }
-  .input-form {
-    margin-top: 14px; }
-    .input-form__description {
-      margin-bottom: 3px; }
-  .form-group_inline {
-    padding: 10px 0 8px; } }
 

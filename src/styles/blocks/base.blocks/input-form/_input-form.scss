@@ -9,3 +9,17 @@
     margin-bottom: 12px;
   }
 }
+
+@media only screen and (max-width: $breakpoint) {
+  .input-form__description {
+    width: 210px;
+  }
+
+  .input-form {
+    margin-top: 14px;
+    
+    &__description {
+      margin-bottom: 3px;
+    }
+  }
+}

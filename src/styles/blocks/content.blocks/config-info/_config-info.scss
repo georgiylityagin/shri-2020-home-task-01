@@ -1,7 +1,6 @@
 .config-info {
   margin: 0 auto;
   width: 100%;
-  // height: 248px;
   display: flex;
   flex-direction: column;
   transform: translateY(-25px);
@@ -36,7 +35,9 @@
 
 
 @media only screen and (max-width: $breakpoint) {
-  // .config-info {
-  //   padding-top: 94px;
-  // }
+  .config-info {
+    .button {
+      width: auto;
+    }
+  }
 }
